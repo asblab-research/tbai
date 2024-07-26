@@ -21,7 +21,7 @@
 
 	<!-- Empty World -->
 	<include file="$(find gazebo_ros)/launch/empty_world.launch">
-		<arg name="world_name" value="$(find aws_robomaker_hospital_world)/worlds/hospital.world"/>
+		<arg name="world_name" value="$(find aws_robomaker_hospital_world)/worlds/hospital_one_floor_custom.world"/>
 		<arg name="use_sim_time" value="$(arg use_sim_time)"/>
 		<arg name="gui" value="$(arg gui)"/>
 		<arg name="paused" value="$(arg paused)"/>
