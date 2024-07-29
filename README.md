@@ -67,7 +67,7 @@ Currently only tbai_mpc_perceptive and tbai_rl_perceptive are modified to use aw
 ### tbai_mpc_perceptive
 ```bash
 # Start ROS and relevant nodes
-roslaunch tbai_mpc_perceptive simple_hospital_two_floor.launch #single floor world can be launched using simple_hospital.launch
+roslaunch tbai_mpc_perceptive simple_hospital_two_floor.launch # single floor world can be launched using simple_hospital.launch
 
 # Change controllers (in a different terminal)
 rostopic pub /anymal_d/change_controller std_msgs/String "data: 'STAND'"
@@ -77,13 +77,9 @@ rostopic pub /anymal_d/change_controller std_msgs/String "data: 'WBC'"
 # In the MPC controller terminal (started with roslaunch) change gait to trot
 ```
 ### tbai_rl_perceptive
-# Start ROS and relevant nodes
-roslaunch tbai_rl_perceptive simple.launch gui:=true
-
-# Change controllers
 ```bash
 # Start ROS and relevant nodes
-roslaunch tbai_rl_perceptive simple_hospital_two_floor.launch #single floor world can be launched using simple_hospital.launch
+roslaunch tbai_rl_perceptive simple_hospital_two_floor.launch # single floor world can be launched using simple_hospital.launch
 
 # Change controllers (in a different terminal)
 rostopic pub /anymal_d/change_controller std_msgs/String "data: 'RL'"
