@@ -91,6 +91,10 @@ rostopic pub /anymal_d/change_controller std_msgs/String "data: 'BOB'"  # RL and
 rostopic pub /anymal_d/change_controller std_msgs/String "data: 'STAND'"
 #rostopic pub /anymal_d/change_controller std_msgs/String "data: 'SIT'"
 ```
+## Controlling the quadruped
+A joystick is used to control the robot. `joy_node` is started through the launch file.
+
+left analog stick = translation ; right analog stick = rotation 
 
 ## Implemented controllers
 
