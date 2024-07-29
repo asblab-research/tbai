@@ -17,9 +17,9 @@
     <arg name="gui" default="true"/>
     <arg name="paused" default="false"/>
     <arg name="world" default="normal"/>
-    <arg name="x" default="4.5"/> 	<!-- -4.5 -->  <!-- 4.1 -->  
-    <arg name="y" default="20.0"/> 	<!-- -33.8 --> <!-- 19.7 -->
-    <arg name="z" default="0.5"/> 	<!-- 0.2 -->  <!-- 0.2 -->
+    <arg name="x" default="-4.6"/> 	<!-- Bottom-left -4.5 -->     <!-- Right-Stairs 4.5 -->  
+    <arg name="y" default="16.5"/> 	<!-- Bottom-left -33.8 -->    <!-- Right-Stairs 20.0 -->
+    <arg name="z" default="0.5"/> 	<!-- Bottom-left 0.5 -->      <!-- Right-Stairs 0.5 -->
     <!-- <arg name="x" default="0.0"/>
     <arg name="y" default="0.0"/>
     <arg name="z" default="3.0"/> -->
