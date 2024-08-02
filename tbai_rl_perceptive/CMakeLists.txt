@@ -32,6 +32,12 @@ catkin_package(
 add_executable(simple
     src/simple.cpp
 )
+
+catkin_install_python(PROGRAMS scripts/joy_emulator.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+
 target_link_libraries(simple
     ${catkin_LIBRARIES} yaml-cpp
 )
