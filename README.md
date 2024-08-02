@@ -2,6 +2,8 @@
 Towards better athletic intelligence
 
 ## Installing tbai
+Install Catkin tools using the steps provided [here](https://catkin-tools.readthedocs.io/en/latest/installing.html)
+
 ```bash
 # Install dependencies
 sudo apt install libmpfr-dev
@@ -48,6 +50,15 @@ Your `dependencies` folder should not look as follows:
 cd <your-workspace>/src
 git clone git@github.com:asblab-research/aws-robomaker-hospital-world.git
 ```
+### Virtual Enivronment / Anaconda
+In case you are using a venv these additional packages will be needed.
+```bash
+pip install empy==3.3.4
+pip install catkin_pkg
+sudo apt-get install doxygen
+pip install rospkg
+pip install defusedxml
+```
 ## Building the package
 ```bash
 #Build aws-robomaker-hospital-world
@@ -91,6 +102,11 @@ rostopic pub /anymal_d/change_controller std_msgs/String "data: 'STAND'"
 A joystick is used to control the robot. `joy_node` is started through the launch file.
 
 left analog stick = translation ; right analog stick = rotation 
+
+If you do not have access to a controller (recommended), a joystick emulator is provided.
+```bash
+rosrun tbai_rl_perceptive joy_emulator.py
+```
 
 ## Implemented controllers
 
